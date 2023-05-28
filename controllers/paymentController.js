@@ -58,7 +58,7 @@ exports.paymentHandler = (req, res) => {
 
 exports.notificationMidtrans = async (req,res) => {
 
-    const API_URL = 'http://localhost:3000'
+    const API_URL = 'http://18.208.131.208:3000'
 
     coreApi.transaction.notification(req.body)
     .then(async (status) => {
